@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My First React app</title>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+  <script type="text/babel">
+  class AboutMe extends React.Component {
+     constructor(age, location, track){
+           super(age, location, track);
+           this.state = {
+             age: 28,
+             location: 'San Luis Obispo, CA',
+             track: 'Web Developer Track'
+            }
+         }
+
+    render() {
+      return (
+        <div>
+          <h3> Hi! I am a student at {this.props.name}.</h3>
+          <h3> I am on the {this.state.track}. </h3>
+          <h4> I am {this.state.age} years old. </h4>
+          <h4> I live in {this.state.location}. </h4>
+
+        </div>
+       );
+    }
+  }
+
+  ReactDOM.render(
+     <AboutMe name = "Bloc"/>,
+  document.getElementById('app')
+      );
+    </script>
+</body>
+
+</html>
