@@ -1,0 +1,4 @@
+In your own words, explain the React core concept of encapsulation. Discuss why this React principle is important in application development.
+
+
+Encapsulation is a major principle in object oriented programing, including React. It allows us to group public and private members into a single object. This principle is important in application because we are allowed to use certain properties openly while also keeping certain ones private. An example would be an our online banking, lets pretend our profile is a single object, we are given access to information that shows us our funds but we are unable to see our account number in full even though it is contained in our object.
