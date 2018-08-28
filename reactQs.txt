@@ -1,0 +1,3 @@
+In your own words, explain what happens behind the scenes when you use JSX.
+
+When you you use JSX you pass it through a compiler, like babel which converts it to JavaScript before you load it to your browser.
